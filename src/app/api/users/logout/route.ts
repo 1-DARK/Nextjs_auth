@@ -1,8 +1,7 @@
-import { connect } from '@/dbConfig/dbConfig'
-import User from '@/models/userModel'
-import { NextRequest, NextResponse } from 'next/server'
-import bcryptjs from 'bcryptjs'
-import jwt from "jsonwebtoken";
+
+
+import { NextResponse } from 'next/server'
+
 
 // For logout we remove the cookies
 
