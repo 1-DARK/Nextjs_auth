@@ -1,14 +1,13 @@
 import { connect } from '@/dbConfig/dbConfig'
 import User from '@/models/userModel'
 import { NextRequest, NextResponse } from 'next/server'
-import bcryptjs from 'bcryptjs'
 import jwt from "jsonwebtoken";
 connect()
 
 export async function POST(request: NextRequest) {
     try {
         const reqBody = await request.json()
-        const { email, security_pin } = reqBody
+        const { email } = reqBody
         console.log(reqBody)
 
         //check if user exists
